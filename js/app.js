@@ -20,7 +20,7 @@ function toggleTheme() {
     } else {
       // Switch to light theme
       themeBtn.classList.remove("dark")
-      document.documentElement.style.setProperty("--bg", "rgb(222, 222, 222)");
+      document.documentElement.style.setProperty("--bg", "rgb(246, 246, 250)");
       document.documentElement.style.setProperty("--card-bg", "white");
       document.documentElement.style.setProperty("--txt1", "black");
       document.documentElement.style.setProperty("--txt2", "rgb(71, 71, 71)");

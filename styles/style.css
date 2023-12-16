@@ -3,7 +3,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
 :root {
-  --bg: rgb(222, 222, 222);
   --bg:rgb(246, 246, 250);
   --card-bg: white;
   --txt1: black;
