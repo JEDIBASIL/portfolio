@@ -685,14 +685,35 @@ footer .social_container i {
     height: 160px;
   }
   .hero_section .element_container .element_content .min_box {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+  }
+
+  @keyframes scaleInAnimation2 {
+    from {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1) translateY(-20px);
+      opacity: 1;
+    }
   }
 
   .hero_section .element_container .element_content .big_box::before,
   .hero_section .element_container .element_content .big_box::after {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero_section .element_container .element_content .big_box::after{
+    left: -20px;
+    top: -20px;
+  }
+
+  .hero_section .element_container .element_content .big_box::before{
+    bottom: -20px !important;
+    right: -20px !important;
   }
 
   .hero_section .text h1,
