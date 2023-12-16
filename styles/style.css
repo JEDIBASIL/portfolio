@@ -643,6 +643,14 @@ footer .social_container i {
 }
 
 @media screen and (max-width: 500px) {
+
+  .hero_section .text h1,
+  .project_section h1,
+  .skills_section h1,
+  footer h1 {
+    font-size: 37px;
+  }
+
   .hero_section .element_3_container{
     grid-template-columns: repeat(2,1fr);
   }
