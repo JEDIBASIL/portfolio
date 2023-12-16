@@ -13,7 +13,7 @@
   --lin-bg3: rgb(164, 143, 234);
 }
 
-/* :root {
+:root {
   --bg: rgb(11, 11, 11);
   --card-bg: rgb(15, 15, 23);
   --txt1: white;
@@ -22,7 +22,7 @@
   --lin-bg1: rgb(0, 97, 65);
   --lin-bg2: rgb(59, 0, 99);
   --lin-bg3: rgb(35, 27, 60);
-} */
+}
 
 * {
   margin: 0;
@@ -723,6 +723,10 @@ footer .social_container i {
 
   .skills_section .container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills_section .container .card{
+    padding: 16px;
   }
 
   .skills_section .container .card img {
