@@ -3,7 +3,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
 :root {
-  --bg: rgb(243, 243, 243);
+  --bg: rgb(236, 236, 236);
   --card-bg: white;
   --txt1: black;
   --txt2: rgb(71, 71, 71);
@@ -70,10 +70,11 @@ nav {
   justify-content: center;
   height: 60px;
   border-radius: 50px;
-  /* background-color: var(--nav-bg); */
-  backdrop-filter: blur(200px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px) saturate(1.7);
   z-index: 100;
 }
+
 
 nav .logo {
   font-family: "Unlearned BRK", sans-serif;
@@ -85,6 +86,7 @@ nav .logo {
 nav ul {
   list-style: none;
   display: flex;
+  z-index: 2;
 }
 
 nav .mobile_icon {
@@ -259,7 +261,8 @@ nav .theme-icon.dark .fa-moon {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.203);
   backdrop-filter: blur(20px);
-  position: absolute;
+  -webkit-backdrop-filter: blur(20px) saturate(1.7);
+    position: absolute;
   z-index: 5;
   top: 0;
   display: flex;
@@ -288,7 +291,8 @@ nav .theme-icon.dark .fa-moon {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.203);
   backdrop-filter: blur(20px);
-  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.151);
+  -webkit-backdrop-filter: blur(20px) saturate(1.7);
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.151);
   width: 150px;
   height: 150px;
   display: flex;
@@ -451,7 +455,6 @@ nav .theme-icon.dark .fa-moon {
 }
 
 .skills_section .container .card h2 {
-  font-family: acorn;
   font-size: 22px;
   color: var(--txt1);
 }
