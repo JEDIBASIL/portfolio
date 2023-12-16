@@ -1,27 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../styles/style.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/about.css" />
+  </head>
+  <body>
     <div class="background_linear">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <nav class="blur">
+      <!-- <a href="" class="logo">Jedi</a> -->
+      <ul>
+        <li><a href="/">Works</a></li>
+        <li><a class="active" href="./pages/about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile_icon"></i>
+      <div class="theme-icon">
+        <i class="fa-regular fa-moon"></i>
+        <i class="fa-regular fa-sun"></i>
       </div>
-    <nav>
-        <!-- <a href="" class="logo">Jedi</a> -->
-        <ul>
-          <li><a href="/">Projects</a></li>
-          <li><a class="active"  href="about.html">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile_icon"></i>
-      </nav>
-</body>
-<script src="../js/app.js"></script>
+    </nav>
+
+    <div class="about_container">
+      <div class="about_img_container">
+        <img src="../images/me.jpg" alt="" />
+      </div>
+      <div class="text">
+        <!-- <h1>Hi, I'm Jedidiah</h1> -->
+        <h1>I'm a Developer working remotely from Nigeria 🇳🇬</h1>
+        <p>
+          Over the past 5 years, I've worked in various tech fields, including
+          front-end development, backend development. I'm proud to have worn
+          many hats.
+        </p>
+      </div>
+    </div>
+
+    <div class="service">
+      <h1>Service</h1>
+      <div class="container">
+        <div class="card">
+          <i class="bi bi-window-fullscreen"></i>
+          <h2>Web Development</h2>
+          <p>
+            Experienced in web technologies with a focus on detail,
+            user-centricity, and high-performance solutions
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="bi bi-phone"></i>
+          <h2>Mobile Development</h2>
+          <p>
+            Expert at creating user-friendly mobile apps that deliver
+            high-quality solutions.
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="bi bi-journal-text"></i>
+          <h2>Tutor</h2>
+          <p>
+            Highly skilled and proficient in the art of imparting comprehensive
+            knowledge
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience">
+      <h1>Experience</h1>
+      <div class="container">
+        <div class="card">
+          <div class="heading">
+            <h3>Stringcode Limited / Software Engineer</h3>
+            <p>JULY 2018 - DECEMBER 2022</p>
+          </div>
+          <p class="text">
+            I participated in the Ayagigs fellowship program, focusing on the
+            backend track. Additionally I took on the role of a team lead within
+            my pod. At the conclusion of the program, our project was recognized
+            as the best among the participants. Throughout the program, I worked
+            closely with the Ayagigs frontend developers to develop
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="heading">
+            <h3>Ayagigs / Frontend</h3>
+            <p>NOVEMBER 2022 - MAY 2023</p>
+          </div>
+          <p class="text">
+            As part of a team of developers, I contributed as a frontend
+            engineer to create a web application for medical diagnosis I
+            provided guidance to junior frontend engineers and focused on
+            instructing them in HTML5, CSS SaaS and React.js
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills_section">
+      <h1>Skills</h1>
+      <div class="container">
+        <div class="card">
+          <img src="../images/javascript.png" alt="" />
+          <h2>JavaScript</h2>
+        </div>
+
+        <div class="card">
+          <img src="../images/java.png" alt="" />
+          <h2>Java</h2>
+        </div>
+
+        <div class="card">
+          <img src="../images/github.png" alt="" />
+          <h2>Git & Github</h2>
+        </div>
+
+        <div class="card">
+          <img src="../images/html.png" alt="" />
+          <h2>HTML5</h2>
+        </div>
+
+        <div class="card">
+          <img src="../images/css.png" alt="" />
+          <h2>CSS3</h2>
+        </div>
+
+        <div class="card">
+          <img src="../images/sql.png" alt="" />
+          <h2>Sql</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer_wrapper">
+      <footer>
+        <h1>Have a Job for Me?</h1>
+        <p>
+          Experienced software developer available for team collaboration or
+          building your business's software solution. Skilled in clean coding,
+          problem-solving, and staying up-to-date with industry trends. Let's
+          connect and create something great!
+        </p>
+        <div class="bottom_container">
+          <a href="mailto:jedidiahbasil@gmail.com">
+            <button>Let's talk</button>
+          </a>
+          <ul class="social_container">
+            <li>
+              <a target="_blank" href="https://github.com/JEDIBASIL"
+                ><i class="bi bi-github"></i>GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/jedidiah-oton-17a953225/"
+                ><i class="bi bi-linkedin"></i>LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="../js/app.js"></script>
 </html>

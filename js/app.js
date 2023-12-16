@@ -71,5 +71,5 @@ window.addEventListener("scroll",(e)=>{
     }
 })
 
-init()
+// init()
 

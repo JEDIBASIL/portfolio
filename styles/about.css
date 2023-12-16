@@ -1,0 +1,162 @@
+.about_container {
+  display: flex;
+  z-index: 20;
+  position: relative;
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 140px 0;
+  padding-bottom: 100px;
+  align-items: center;
+  gap: 50px;
+}
+
+.about_container .about_img_container{
+    width: 100%;
+}
+
+.about_container .about_img_container img {
+  width: 270px;
+  border-radius: 100px 100px 0px 0px;
+}
+
+.about_container .text h1 {
+  font-family: acorn;
+  font-size: 60px;
+  color: var(--txt1);
+}
+
+.about_container .text p {
+  line-height: 1.4;
+  font-size: 22px;
+}
+
+.experience {
+  max-width: 900px;
+  margin: 0px auto;
+  margin-bottom: 60px;
+}
+
+.experience .container {
+  display: grid;
+  gap: 40px;
+  padding: 50px;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.experience .container .card .heading {
+  margin-bottom: 15px;
+}
+
+.experience .container .card .heading h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: var(--txt1);
+}
+
+.experience .container .card .text {
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.experience h1 {
+  font-family: acorn;
+  font-size: 60px;
+  color: var(--txt1);
+}
+
+.service {
+  max-width: 900px;
+  margin: 0px auto;
+  margin-bottom: 60px;
+}
+
+.service h1 {
+  font-family: acorn;
+  font-size: 60px;
+  color: var(--txt1);
+}
+
+.service .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  background-color: #7950f2;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+
+
+.service .container .card h2 {
+  color: white;
+  margin-top: 10px;
+}
+
+.service .container .card p {
+  line-height: 1.5;
+  font-size: 18px;
+  margin-top: 10px;
+  color: white;
+}
+
+.service .container .card i {
+  font-size: 35px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .about_container .text h1,
+  .service h1,
+  .experience h1 {
+    font-size: 50px;
+  }
+
+  .about_container,
+  .service,
+  .experience {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+    .about_container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about_container .about_img_container img {
+        width: 100%;
+        max-width: 500px;
+        height: 500px;
+        object-fit: cover;
+      }
+  .service .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .service .container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    .about_container .text h1,
+  .service h1,
+  .experience h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 500px){
+    .about_container .about_img_container img {
+        width: 100%;
+        max-width: 300px;
+        height: 350px;
+      }
+      .experience .container {
+        padding: 30px 20px;
+      }
+}
