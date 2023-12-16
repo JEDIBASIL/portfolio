@@ -7,64 +7,80 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    <div class="background_linear">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
     <nav>
-      <a href="" class="logo">Jedi</a>
+      <!-- <a href="" class="logo">Jedi</a> -->
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About</a></li>
+        <li><a class="active" href="/">Projects</a></li>
+        <li><a href="./pages/about.html">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <i class="bi bi-list mobile_icon"></i>
+      <div class="theme-icon">
+        <i class="fa-regular fa-moon"></i>
+        <i class="fa-regular fa-sun"></i>
+      </div>
     </nav>
     <div class="hero_section">
-      <div class="background_linear">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-      </div>
       <div class="text">
-        <h1>Hi 👋, I'm Jedidiah</h1>
-        <h1>A Software Developer</h1>
+        <h1>Hi 👋</h1>
+        <h1>I'm Jedidiah</h1>
         <p>
           I'm a dedicated software engineer committed to creating experiences
           that are not only engaging but also accessible and truly user-centric
         </p>
-        <a href=""><button>Let's talk</button></a>
+        <a style="width: max-content;" href="mailto:jedidiahbasil@gmail.com"><button>Let's talk</button></a>
       </div>
 
-      <div class="img_container">
+      <!-- <div class="img_container">
         <img src="images/18301797_5882087.png" alt="" />
+      </div> -->
+      <div class="element_container">
+        <div class="element_content">
+            
+          <div class="big_box">
+              <h1>JEDI</h1>
+          </div>
+          <div class="min_box">
+            💻
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="project_section">
+      <audio src=""></audio>
       <h1>Projects</h1>
       <div class="container">
         <div class="card">
           <div class="text">
             <h2>Spax</h2>
             <p>Your daily note, reminder and collaborative workspace</p>
-            <a href="">
+            <a target="_blank" href="https://spax.vercel.app">
               <button>View project</button>
             </a>
           </div>
-          <img
-            src="images/clipboard-with-checklist-paper-note-icon-symbol-purple-background-3d-rendering.jpg"
-            alt=""
-          />
+          <div style="background-color: rgb(118,78,235);" class="card_img_container">
+          <img  src="images/MacBook Pro 14_ - 1.png" alt="" />
+          </div>
         </div>
 
         <div class="card">
           <div class="text">
             <h2>Sprinter</h2>
             <p>Your daily note, reminder and collaborative workspace</p>
-            <a href="">
+            <a target="_blank" href="https://sprinter-ten.vercel.app/">
               <button>View project</button>
             </a>
           </div>
-          <img src="images/9579709.jpg" alt="" />
+          <div style="background-color: rgb(134,41,109);" class="card_img_container">
+          <img src="images/MacBook Pro 14_ - 1 (1).png" alt="" />
+        </div>
         </div>
       </div>
     </div>
@@ -106,11 +122,6 @@
 
     <div class="footer_wrapper">
       <footer>
-        <div class="footer_gradient">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
         <h1>Have a Job for Me?</h1>
         <p>
           Experienced software developer available for team collaboration or
@@ -119,15 +130,23 @@
           connect and create something great!
         </p>
         <div class="bottom_container">
-          <a href="">
+          <a href="mailto:jedidiahbasil@gmail.com">
             <button>Let's talk</button>
           </a>
           <ul class="social_container">
-            <li><a href=""><i class="bi bi-github"></i>GitHub</a></li>
-            <li><a href=""><i class="bi bi-linkedin"></i>LinkedIn</a></li>
+            <li><a target="_blank" href="https://github.com/JEDIBASIL"><i class="bi bi-github"></i>GitHub</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/jedidiah-oton-17a953225/"><i class="bi bi-linkedin"></i>LinkedIn</a></li>
           </ul>
         </div>
       </footer>
     </div>
+
+    <div class="footer_gradient">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
