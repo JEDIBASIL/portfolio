@@ -1,4 +1,5 @@
 const themeBtn = document.querySelector("nav .theme-icon")
+const navbar = document.querySelector("nav")
 function lightTheme() {
     document.documentElement.style.setProperty("--bg", "whitesmoke")
     document.documentElement.style.setProperty("--card-bg", "white")
@@ -57,9 +58,18 @@ function checkTheme(){
 }
 
 function init() {
-    
     checkTheme()
+    toggleTheme()
 }
 
-// init()
+window.addEventListener("scroll",(e)=>{
+    console.log();
+    if(window.scrollY > 50){
+        navbar.style.backgroundColor="var(--nav-bg)"
+    }else{
+        navbar.style.backgroundColor=""
+    }
+})
+
+init()
 
